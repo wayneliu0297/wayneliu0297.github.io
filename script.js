@@ -14,7 +14,7 @@ const PROJECTS = [
     image: "assets/renovation.png",
     tags: ["Python", "OOP", "scikit-learn", "Streamlit", "Plotly", "PostgreSQL"],
     links: {
-      demo: "", // TODO: paste the Streamlit Cloud URL once deployed
+      demo: "https://renovation-quotation-system-ruydmxqk4nnfn7vdw5cpmv.streamlit.app",
       code: "https://github.com/wayneliu0297/renovation-quotation-system",
       notebook:
         "https://github.com/wayneliu0297/renovation-quotation-system/blob/main/notebooks/quotation_analysis.ipynb",
