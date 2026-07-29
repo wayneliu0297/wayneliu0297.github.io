@@ -22,13 +22,19 @@ const PROJECTS = [
   },
   {
     title: "Taipei Rental GIS Dashboard",
-    status: "soon",
+    status: "live",
     blurb:
-      "An interactive map of Taipei rental listings — geospatial visualisation and " +
-      "filtering to explore price and availability across districts.",
-    image: "", // no screenshot yet -> gradient placeholder
-    tags: ["Python", "Folium", "Streamlit", "SQLite"],
-    links: { demo: "", code: "", notebook: "" },
+      "An Airbnb-style interactive rental map of Greater Taipei: 220 synthetic listings " +
+      "across 14 districts with live filters (city, price, room type, size, MRT distance), " +
+      "price-pill map markers, photo cards and a fly-to detail view. Built on Streamlit + " +
+      "Folium + SQLite, with a pytest suite and GitHub Actions CI.",
+    image: "assets/taipei-gis.jpg",
+    tags: ["Python", "Streamlit", "Folium", "SQLite", "pandas", "GIS"],
+    links: {
+      demo: "https://taipei-rental-gis-dashboard.streamlit.app",
+      code: "https://github.com/wayneliu0297/taipei-rental-gis-dashboard",
+      notebook: "",
+    },
   },
   {
     title: "Renovation Inventory System",
