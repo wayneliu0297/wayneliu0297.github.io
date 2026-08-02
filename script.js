@@ -31,7 +31,7 @@ const PROJECTS = [
     image: "assets/taipei-gis.jpg",
     tags: ["Python", "Streamlit", "Folium", "SQLite", "pandas", "GIS"],
     links: {
-      demo: "https://taipei-rental-gis-dashboard.streamlit.app",
+      demo: "https://taipei-rental-gis-dashboard-ngtfxp5cvwa4cenpvpvuna.streamlit.app",
       code: "https://github.com/wayneliu0297/taipei-rental-gis-dashboard",
       notebook: "",
     },
