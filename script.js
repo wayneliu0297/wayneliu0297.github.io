@@ -37,14 +37,22 @@ const PROJECTS = [
     },
   },
   {
-    title: "Renovation Inventory System",
-    status: "soon",
+    title: "Renovation Material Inventory Manager",
+    status: "live",
     blurb:
-      "A lightweight inventory and stock-management app for renovation materials, " +
-      "with a clean data model and a simple CRUD interface.",
-    image: "",
-    tags: ["Python", "Streamlit", "SQLite"],
-    links: { demo: "", code: "", notebook: "" },
+      "A full-stack inventory manager for renovation materials: an analytics " +
+      "dashboard (asset value, low-stock alerts, 6-month value trend), a " +
+      "searchable/filterable inventory list, an append-only purchase/movement " +
+      "ledger and full CRUD behind a read-only-vs-editor demo login. Built on " +
+      "Streamlit + SQLite + Plotly, with 56 synthetic materials, a pytest suite " +
+      "and GitHub Actions CI.",
+    image: "assets/material-inventory.jpg",
+    tags: ["Python", "Streamlit", "SQLite", "Plotly", "pandas", "CI"],
+    links: {
+      demo: "https://customized-material-inventory-management-tbv2nxhucsq7gmkjremhq.streamlit.app",
+      code: "https://github.com/wayneliu0297/customized-material-inventory-management",
+      notebook: "",
+    },
   },
 ];
 
