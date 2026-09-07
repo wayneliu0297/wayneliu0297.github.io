@@ -140,10 +140,41 @@ function initNav() {
   window.addEventListener("scroll", onScroll, { passive: true });
 }
 
+/* ---------- mobile menu ---------- */
+function initMobileMenu() {
+  const btn = document.getElementById("nav-toggle");
+  const links = document.getElementById("nav-links");
+  if (!btn || !links) return;
+
+  const close = () => {
+    links.classList.remove("open");
+    btn.setAttribute("aria-expanded", "false");
+    btn.setAttribute("aria-label", "Open menu");
+  };
+
+  btn.addEventListener("click", () => {
+    const open = links.classList.toggle("open");
+    btn.setAttribute("aria-expanded", String(open));
+    btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  });
+
+  // Close after tapping a link, on Escape, or when the layout goes back to desktop.
+  links.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") close();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+  });
+  window.matchMedia("(min-width: 761px)").addEventListener("change", (e) => {
+    if (e.matches) close();
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   renderProjects();
   initReveal();
   initNav();
+  initMobileMenu();
   document.getElementById("year").textContent = new Date().getFullYear();
 });
